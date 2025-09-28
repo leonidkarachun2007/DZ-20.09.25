@@ -66,50 +66,50 @@ using namespace std;
 
 // ѕользователь вводит прибыль фирмы за год (12 мес€цев).«атем пользователь вводит диапазон(например, 3 и 6 Ч поискмежду 3 - м и 6 - м мес€цем).Ќеобходимо определить мес€ц,в котором прибыль была максимальна и мес€ц, в котором прибыль была минимальна с учетом выбранного диапазона.
 
-//int main() {
-//    const int MONTHS = 12;
-//    double profit[MONTHS];
-//
-//    cout << "Enter your profit for 12 months: ";
-//    for (int i = 0; i < MONTHS; i++) {
-//        cin >> profit[i];
-//    }
-//
-//    int startMonth, endMonth;
-//    cout << "Enter the range of months for analysis (e.g., 3 6): ";
-//    cin >> startMonth >> endMonth;
-//
-//  
-//    if (startMonth < 1 || endMonth > 12 || startMonth > endMonth) {
-//        cout << "Incorrect range of months!" << endl;
-//        return 1;
-//    }
-//
-//
-//    double maxProfit = profit[startMonth - 1];
-//    double minProfit = profit[startMonth - 1];
-//    int maxMonth = startMonth;
-//    int minMonth = startMonth;
-//
-//
-//    for (int i = startMonth - 1; i < endMonth; i++) {
-//        if (profit[i] > maxProfit) {
-//            maxProfit = profit[i];
-//            maxMonth = i + 1;
-//        }
-//        if (profit[i] < minProfit) {
-//            minProfit = profit[i];
-//            minMonth = i + 1;
-//        }
-//    }
-//
-//    cout << "The maximum profit was in the month " << maxMonth
-//        << " (" << maxProfit << ")" << endl;
-//    cout << "The minimum profit was in a month. " << minMonth
-//        << " (" << minProfit << ")" << endl;
-//
-//
-//}
+int main() {
+    const int MONTHS = 12;
+    double profit[MONTHS];
+
+    cout << "Enter your profit for 12 months: ";
+    for (int i = 0; i < MONTHS; i++) {
+        cin >> profit[i];
+    }
+
+    int startMonth, endMonth;
+    cout << "Enter the range of months for analysis (e.g., 3 6): ";
+    cin >> startMonth >> endMonth;
+
+  
+    if (startMonth < 1 || endMonth > 12 || startMonth > endMonth) {
+        cout << "Incorrect range of months!" << endl;
+        return 1;
+    }
+
+
+    double maxProfit = profit[startMonth - 1];
+    double minProfit = profit[startMonth - 1];
+    int maxMonth = startMonth;
+    int minMonth = startMonth;
+
+
+    for (int i = startMonth - 1; i < endMonth; i++) {
+        if (profit[i] > maxProfit) {
+            maxProfit = profit[i];
+            maxMonth = i + 1;
+        }
+        if (profit[i] < minProfit) {
+            minProfit = profit[i];
+            minMonth = i + 1;
+        }
+    }
+
+    cout << "The maximum profit was in the month " << maxMonth
+        << " (" << maxProfit << ")" << endl;
+    cout << "The minimum profit was in a month. " << minMonth
+        << " (" << minProfit << ")" << endl;
+
+
+}
 
 
 
